@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kecepatan dengan Turunan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Memasukkan library Math.js untuk perhitungan matematika -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.9.0/math.min.js"></script>
+    <!-- Memasukkan library MathJax untuk render persamaan matematika dalam format LaTeX -->
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Kecepatan dengan Turunan</h1>
+        <!-- Form input untuk fungsi posisi dan nilai t -->
+        <div class="input-box">
+            <label for="function">Masukkan Fungsi Posisi \(x(t)\):</label>
+            <input type="text" id="function" placeholder="Contoh: 3t^2 + 5t + 4">
+            
+            <label for="time">Masukkan Nilai \(t\):</label>
+            <input type="number" id="time" placeholder="Contoh: 2">
+            
+            <!-- Tombol untuk menghitung kecepatan -->
+            <button onclick="calculateSpeed()">Hitung</button>
+        </div>
+        <!-- Menampilkan hasil perhitungan -->
+        <div id="result" class="result"></div>
+        <!-- Menampilkan penjelasan tentang proses perhitungan -->
+        <div id="explanation" class="explanation"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
